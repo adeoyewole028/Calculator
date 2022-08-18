@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./public/output.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Calculator</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form action="index.php" method="post">
+              <div class="form-group">
+                <label for="firstNumber">First Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="firstNumber"
+                  name="firstNumber"
+                  placeholder="Enter first number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="secondNumber">Second Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="secondNumber"
+                  name="secondNumber"
+                  placeholder="Enter second number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="operation">Operation</label>
+                <select class="form-control" id="operation" name="operation">
+                  <option value="add">Add</option>
+                  <option value="subtract">Subtract</option>
+                  <option value="multiply">Multiply</option>
+                  <option value="divide">Divide</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./public/index.js"></script>
+  </body>
+</html>
