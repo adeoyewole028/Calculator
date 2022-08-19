@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -355,6 +355,13 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -549,4 +556,104 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.basis-4 {
+  flex-basis: 1rem;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }

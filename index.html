@@ -7,48 +7,34 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="./public/output.css" />
   </head>
-  <body>
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Calculator</h1>
+  <body class="flex justify-center">
+    <main class="flex mt-8">
+      <div class="w-32">
+        <div class="flex flex-col">
+          <div class="">
+            <h1 class="text-2xl">Calculator</h1>
           </div>
+          <div class="border">Display</div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <form action="index.php" method="post">
-              <div class="form-group">
-                <label for="firstNumber">First Number</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="firstNumber"
-                  name="firstNumber"
-                  placeholder="Enter first number"
-                />
-              </div>
-              <div class="form-group">
-                <label for="secondNumber">Second Number</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="secondNumber"
-                  name="secondNumber"
-                  placeholder="Enter second number"
-                />
-              </div>
-              <div class="form-group">
-                <label for="operation">Operation</label>
-                <select class="form-control" id="operation" name="operation">
-                  <option value="add">Add</option>
-                  <option value="subtract">Subtract</option>
-                  <option value="multiply">Multiply</option>
-                  <option value="divide">Divide</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-primary">Calculate</button>
-            </form>
+        <div class="flex flex-col">
+          <div class="flex justify-center justify-between">
+            <button class="basis-4">C</button><button class="basis-4">◀</button><button class="basis-4">\</button>
+          </div>
+          <div class="flex justify-center justify-between">
+            <button class="basis-4">7️⃣</button><button class="basis-4">8️⃣</button><button class="basis-4">9️⃣</button
+            ><button class="basis-4">x</button>
+          </div>
+          <div class="flex justify-center justify-between">
+            <button class="basis-4">4️⃣</button><button class="basis-4">5️⃣</button><button class="basis-4">6️⃣</button
+            ><button class="basis-4">-</button>
+          </div>
+          <div class="flex justify-center justify-between">
+            <button class="basis-4">1️⃣</button><button class="basis-4">2️⃣</button><button class="basis-4">3️⃣</button
+            ><button class="basis-4">+</button>
+          </div>
+          <div class="flex justify-center justify-between">
+            <button class="basis-4">%</button><button class="basis-4">0️⃣</button><button class="basis-4">.</button
+            ><button class="basis-4">=</button>
           </div>
         </div>
       </div>
